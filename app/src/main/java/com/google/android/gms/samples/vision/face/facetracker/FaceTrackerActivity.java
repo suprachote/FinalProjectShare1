@@ -42,7 +42,7 @@ import com.google.android.gms.samples.vision.face.facetracker.ui.camera.GraphicO
 import java.io.IOException;
 
 /**
- * aa bb
+ * aa bb cc
  * Activity for the face tracker app.  This app detects faces with the rear facing camera, and draws
  * overlay graphics to indicate the position, size, and ID of each face.
  */
