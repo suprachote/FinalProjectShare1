@@ -16,7 +16,8 @@
         android:id="@+id/button"
         android:layout_marginBottom="80dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickCheckConnection" />
 
     <Button
         android:layout_width="wrap_content"
@@ -27,4 +28,34 @@
         android:layout_centerHorizontal="true"
         android:onClick="openFaceTrackingActivity"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BT Status"
+        android:id="@+id/BluetoothStatusText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickCheckConnection" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entry"
+        android:layout_below="@+id/BluetoothStatusText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/button3"
+        android:layout_below="@+id/entry"
+        android:layout_alignRight="@+id/entry"
+        android:layout_alignEnd="@+id/entry"
+        android:layout_alignParentEnd="false"
+        android:onClick="onClickSend" />
 </RelativeLayout>
